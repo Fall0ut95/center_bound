@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+
+<!-- Navigation bar -->
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNav">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<!-- Site name ... possibly use logo? -->
+			<a href="index.html" class="navbar-brand">Center Bound</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNav">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="index.html" title="Home">Home</a></li>
+				<li><a href="#">Overview</a></li>
+				<li><a href="#">Media</a></li>
+				<li><a href="#">Support</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#"><button type="button" class="signup_btn" data-toggle="modal" data-target="#signup_modal"><span class="glyphicon glyphicon-user"></span> Sign Up</button></a></li>
+				<li><a href="#"><button type="button" class="signin_btn" data-toggle="modal" data-target="#signin_modal"><span class="glyphicon glyphicon-log-in"></span> Sign In</button></a></li>
+			</ul>
+		</div>
+
+		<!-- Sign Up Modal -->
+		<div class="modal" id="signup_modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<form class="text-center">
+						<button type="button" class="close close_btn" data-dismiss="modal"><span>&times;</span></button>
+						<p class="signup_header h3 mb-4">Sign Up</p>
+						<hr>
+						<!-- Inputs -->
+						<input type="text" name="username" id="username" class="signup_username form-control mb-4" placeholder="Username">
+						<input type="email" name="email" id="signup_email" class="signup_email form-control mb-4" placeholder="E-mail">
+						<input type="password" name="password" id="signup_password" class="signup_password form-control mb-4" placeholder="Password">
+						<input type="password" name="password" id="signup_cpw" class="signup_cpw form-control mb-4" placeholder="Confirm Password">
+						<!-- Sign Up Confirmation -->
+						<button type="submit" class="btn btn-success btn-block my-4 signup_confirm">Sign Up</button>
+						<p class="already_member">Already a member? <a href="">Sign In</a></p>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!-- Sign In Modal -->
+		<div class="modal" id="signin_modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<form class="text-center">
+						<button type="button" class="close close_btn" data-dismiss="modal"><span>&times;</span></button>
+						<p class="signin_header h3 mb-4">Sign In</p>
+						<hr>
+						<!-- Inputs -->
+						<input type="text" name="username" id="signin_username" class="signin_username form-control mb-4" placeholder="Username">
+						<input type="password" name="password" id="signin_password" class="signin_password form-control mb-4" placeholder="Password">
+						<!-- Extra Content -->
+						<div class="d-flex justify-content-around extra_content">
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="remember_me">
+								<label class="custom-control-label remember_me" for="remember_me" style="font-weight: normal">Remember me</label>
+								<a href="">Forgot Password?</a>
+							</div>
+						</div>
+						<button type="submit" class="btn btn-info btn-block my-4 signin_confirm">Sign In</button>
+						<p class="not_member">Not a member? <a href="">Register</a></p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>
+
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

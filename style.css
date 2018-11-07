@@ -1,0 +1,79 @@
+/* Navigation Bar */
+.navbar{
+	border-radius: 0!important;
+	font-size: 1.15em;
+}
+.signup_btn,
+.signin_btn{
+	background-color: #222222;
+	border: none;
+	margin-top: -10px;
+	margin-bottom: -10px;
+	padding: 10px;
+}
+.signup_btn:hover,
+.signin_btn:hover{
+	color: white!important;
+}
+
+/* Modals */
+.modal-backdrop{
+	opacity: .75;
+}
+.un_input,
+.email_input,
+.pw_input,
+.confirm_pw_input{
+	width: 90%;
+}
+input[type=text],
+input[type=email],
+input[type=password]{
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid #858585;
+}
+.close_btn{
+	margin-right: 45px;
+}
+.signin_header,
+.signup_header{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-left: 45px;
+}
+.signin_username,
+.signin_password,
+.signup_username,
+.signup_email,
+.signup_password,
+.signup_cpw{
+	display: block;
+	margin: 0 auto;
+	width: 80%!important;
+	margin-bottom: 20px;
+	border: 1px solid grey!important;
+}
+.remember_me{
+	margin-right: 40px;
+}
+.extra_content{
+	margin-bottom: 20px;
+}
+.signup_confirm{
+	display: block;
+	margin: 0 auto;
+	width: 25%!important;
+	margin-top: 30px!important;
+	margin-bottom: 30px!important;
+}
+.signin_confirm{
+	display: block;
+	margin:0 auto;
+	width: 25%!important;
+	margin-bottom: 30px!important;
+}
+.not_member,
+.already_member{
+	margin-bottom: 40px;
+}
