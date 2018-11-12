@@ -77,3 +77,7 @@ input[type=password]{
 .already_member{
 	margin-bottom: 40px;
 }
+.already_member_link,
+.not_member_link{
+	cursor: pointer;
+}
